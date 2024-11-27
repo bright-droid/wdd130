@@ -1,0 +1,62 @@
+:root {
+    --primary-color: #9097C0;
+    --secondary-color: #C2948A;
+    --accent1-color: #E9CE2C;
+    --accent2-color: #4A5859;
+    --font-headings: "Geist Mono", serif;
+    --font-bodytext: "Montserrat", serif;
+}
+
+
+h1, h2 {
+    color: var(--accent1-color);
+    font-family: var(--font-headings);
+    font-weight: 600;
+}
+
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: 210px;
+    left: 250px;
+}
+
+article {
+    position: absolute;
+    background-color: rgba(0,0,200,.1);
+    top: 550px;
+    left: 80px;
+    width: 700px;
+    padding: 10px;
+}
+
+.hero article img {
+    width: 200px;
+    float: right;
+}
+
+
+p {
+    color: var(--accent2-color);
+    font-family: var(--font-bodytext);
+}
+
+
+.sociallinks a {
+    text-decoration: none;
+}
+
+
+/* limit the entire width of the page */
+body {
+    max-width: 800px;
+}
+
+

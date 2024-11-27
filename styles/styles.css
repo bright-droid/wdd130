@@ -55,14 +55,14 @@ aside {
 }
 
 aside img {
-    width: 200px;
+    width: 170px;
     height: auto;
 }
 
 aside h2 {
     position: absolute;
-    top: 4px;
-    left: 80px;
+    top: 15px;
+    left: 70px;
     color: rgb(16, 88, 16);
 }
 
@@ -80,6 +80,7 @@ footer {
     padding: 1rem;
     background-color: rgb(49, 47, 47);
     color: white;
+    clear: both;
 }
 
 .indent {

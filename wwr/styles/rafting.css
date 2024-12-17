@@ -13,7 +13,6 @@ header {
     grid-template-columns: 120px 1fr 1fr;
     background-color: #a5a5a5;
     align-items: center;
-    border: 1px solid #666666;
 }
 
 nav {
@@ -48,15 +47,15 @@ h1, h2 {
 
 h1 {
     position: absolute;
-    top: 210px;
-    left: 250px;
+    top: 200px;
+    left: 600px;
 }
 
 article {
     position: absolute;
     background-color: rgba(0,0,200,.1);
     top: 550px;
-    left: 80px;
+    left: 420px;
     width: 700px;
     padding: 10px;
 }
@@ -66,6 +65,20 @@ article {
     float: right;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px auto;
+}
+
+section h2 {
+    grid-column: 2
+}
+
+section img {
+    grid-column: 2
+
+}
 
 p {
     color: var(--accent2-color);
@@ -85,6 +98,7 @@ footer {
 /* limit the entire width of the page */
 body {
     max-width: 800px;
+    margin: 0 auto;
 }
 
 

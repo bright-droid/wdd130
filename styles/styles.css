@@ -1,5 +1,9 @@
+:root {
+    --general-color: darkblue;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--general-color);
     padding: 10px;
 }
 
@@ -10,7 +14,7 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--general-color);
 }
 
 img {
@@ -39,7 +43,7 @@ aside {
     margin: 1px;
     border: 1px solid rgb(0,0,0,.3);
     padding: 1rem;
-    background-color: darkblue;
+    background-color: var(--general-color);
     color: #ffffff;
     text-align: center;
 }

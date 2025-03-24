@@ -1,0 +1,53 @@
+:root {
+    --primary-color: #98c5e2;
+    --secondary-color: #114a2d;
+    --accent1-color: #133986;
+    --accent2-color: #ffffff;
+}
+
+h1, h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 550;
+    font-size: 50px;
+    color: var(--accent1-color);
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    color: var(--accent1-color)
+}
+
+footer a {
+    text-decoration: none;
+}
+
+body {
+    max-width: 840px;
+}
+
+.hero {
+    position: relative;
+}
+
+.heroimg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 0px;
+    right: 168px;
+}
+
+article {
+    position: absolute;
+    bottom: 40px;
+    left: 55px;
+}
+
+article img {
+    width: 200px;
+    float: right;
+}

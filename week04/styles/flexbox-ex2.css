@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+    width: 90%;
+    max-width: 960px;
+    margin: 10px auto;
+  }
+  div {
+    height: 100px;
+    border: 1px solid black;
+  }
+  button {
+    font-size: 18px;
+    line-height: 1.5;
+    width: 15%;
+  }
+  /* Add your flexbox CSS below here */
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  button:first-child {
+    order: 1;
+    /* this rule will make the "smile" button go to the end of the 
+    main axis becus all other buttons are default position "0" */
+  }
+
+  button:last-child {
+    order: -1;
+    /* this rule will make the "blush" button go to the start of the 
+    main axis since other buttons are default position "0",
+    a negative number would come after them */
+  }
+

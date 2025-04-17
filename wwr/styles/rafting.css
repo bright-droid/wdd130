@@ -5,6 +5,12 @@
     --accent2-color: #ffffff;
 }
 
+body {
+    max-width: 840px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+}
+
 h1, h2 {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 550;
@@ -17,12 +23,31 @@ p {
     color: var(--accent1-color)
 }
 
-footer a {
-    text-decoration: none;
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px 0 80px;
 }
 
-body {
-    max-width: 840px;
+header img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .hero {
@@ -33,21 +58,97 @@ body {
     display: block;
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
-    top: 0px;
-    right: 168px;
+    top: 50px;
+    right: 70px;
+    opacity: 1;
+    background-color: #15313a80;
+    padding: 0 200px 0 200px;
+    color: var(--accent2-color);
 }
 
-article {
+.hero article {
     position: absolute;
-    bottom: 40px;
-    left: 55px;
+    bottom: 250px;
+    left: 70px;
+    margin-right: 20px;
+    opacity: 1;
+    background-color: #15313a80;
 }
 
-article img {
-    width: 200px;
+.hero article img {
     float: right;
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero article p {
+    color: var(--accent2-color)
+}
+
+section {
+    margin-top: 40px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: -2px;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.history img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+}
+
+
+.adventure img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 0 50px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
+
+.sociallinks img {
+    width: 20px;
+    height: auto;
+    object-fit: cover;
 }

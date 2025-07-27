@@ -38,6 +38,7 @@ main img {
 
 p {
     padding: 0;
+    margin-left: 1rem;
 }
 
 main {
@@ -76,6 +77,7 @@ ul a {
 
 .box {
     margin: 1rem;
+    margin-top: 2rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
     background-color: lightblue;
@@ -83,5 +85,5 @@ ul a {
 }
 
 .indent {
-    padding: 1rem;
+    padding: 2rem;
 }

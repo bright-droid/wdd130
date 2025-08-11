@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color: #093E10;
+    --secondary-color: #F2F2F2;
+    --accent1-color: #0C1646;
+    --accent2-color: #B5B5B5;
+    --heading-font: "Bebas Neue", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+
+header {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+header img {
+    width: 200px;
+    height: auto;
+}
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color)
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color)
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+nav, p, section, aritcle {
+    margin: 16px;
+    padding: 8px;
+}
+
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+article p {
+    color: var(--accent2-color)
+}
+
+.hero article {
+    position: absolute;
+    bottom: 125px;
+    left: 65px;
+    margin-right: 20px;
+    opacity: 1;
+    background-color: #0f2749b9;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    height: auto;
+}
+
+
+.history {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.history img {
+    width: 165px;
+    height: auto;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-evenly;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.adventure img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    margin-top: 30px;
+    padding: 0 50px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 20px;
+    height: auto;
+    object-fit: cover;
+}

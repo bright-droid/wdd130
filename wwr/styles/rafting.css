@@ -418,12 +418,16 @@ footer {
     padding: 0 50px;
 }
 
-.socialmedia a {
+.socials a {
     text-decoration: none;
 }
 
-.socialmedia img {
+.socials img {
     width: 20px;
     height: auto;
     object-fit: cover;
+}
+
+.wireframe-link {
+    text-align: center;
 }

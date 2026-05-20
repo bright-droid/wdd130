@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+} /*a universal selector that selects everything. Now set margin and padding to 0
+to control it explicitly*/
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #000;
+    color: #eee;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+}
+
+main {
+    width: 400px;
+    margin: 0 auto;
+} /*center everything from the main section*/
+
+h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 30px #333;
+}
+
+section {
+    border: 1px solid rgb(0 0 0 / 10%);
+    background-color: #eee;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: smaller;
+}
+
+h2 {
+    border-bottom: 1px dotted #000;
+}
+
+section p {
+    margin: 10px;
+}
+
+ul {
+    margin: 10px 20px;
+}
+
+footer {
+    font-size: small;
+}

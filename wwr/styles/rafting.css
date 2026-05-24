@@ -1,6 +1,6 @@
 :root {
     --primary-color: #3d405b; /*Twilight Indigo*/
-    --secondary-color: #CEB992; /*Khaki Beige*/
+    --secondary-color: #eee; /*White*/
     --accent1-color: #004643; /*Pine Teal*/
     --accent2-color: #CFB9A5; /*Pale Oak*/
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -23,14 +23,14 @@ header, main, footer {
     margin: 0 auto;
  }
 
-/* font setting for h1 */
-.caveat-brush-regular {
+/* initial font setting for h1 */
+/* .caveat-brush-regular {
      font-family: "Caveat Brush", cursive;
      font-weight: 400;
      font-style: normal;
- }
+ } */
 
-h2 {
+h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
  }
@@ -63,17 +63,17 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--secondary-color);
 }
 
-article {
+.hero article {
     position: absolute;
     bottom: 20px;
     padding: 16px;
     text-align: center;
     opacity: 0.8;
-    background-color: var(--primary-color);
-    color: #eee;
+    background-color: var(--accent2-color);
+    color: var(--primary-color)
 }
 
 .hero article img {
@@ -85,8 +85,8 @@ article {
 section h2 {
     padding: 1rem;
     text-align: center;
-    background-color: var(--primary-color);
-    color: #eee;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
 }
 
 footer {

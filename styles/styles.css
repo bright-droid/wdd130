@@ -1,5 +1,9 @@
+:root {
+    --page-color-theme-1: darkblue;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--page-color-theme-1);
     padding: 10px
 }
 nav a {
@@ -8,7 +12,7 @@ nav a {
     padding: 20px;
 }
 h1 {
-    color: darkblue;
+    color: var(--page-color-theme-1);
 }
 main img {
     width: 150px;

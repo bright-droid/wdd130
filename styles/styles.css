@@ -8,18 +8,31 @@
     --page-color-theme-1: darkblue;
 }
 
+header, .grid, footer {
+    max-width: 840px;
+    margin: 1rem;
+}
+
 nav {
     background-color: var(--page-color-theme-1);
-    padding: 10px
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
+    padding: .5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
 }
 h1 {
     color: var(--page-color-theme-1);
     padding: .5rem;
+    border-bottom: 1px solid #777;
+    margin: .5rem;
 }
 main img {
     width: 150px;
@@ -30,23 +43,27 @@ main img {
     float: right;
     margin: 0 0 1rem 1rem;
 }
+main {
+    grid-column: 3/4;
+    margin: 1rem;
+}
 
 p {
     margin: 1rem;
 }
 
-main {
-    max-width: 840px;
-}
 
 aside {
     width: 20rem;
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 aside img {
     width: 200px;
     height: auto;
+    box-shadow: 0 0 30px #777;
 }
 aside h2 {
     position: absolute;
@@ -73,4 +90,9 @@ footer {
 
 .indent {
     padding-left: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }

@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #3d405b; /*Twilight Indigo*/
+    --primary-color: #0B1D51; /*Deep Navy*/
     --secondary-color: #eee; /*White*/
     --accent1-color: #004643; /*Pine Teal*/
     --accent2-color: #CFB9A5; /*Pale Oak*/
@@ -30,6 +30,21 @@ header, main, footer {
      font-style: normal;
  } */
 
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    background-color: var(--accent2-color);
+    margin-bottom: 1.5rem;
+}
+header img {
+    padding: .5rem;
+}
+header nav {
+    background-color: var(--accent1-color);
+    padding: 0;
+}
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -40,10 +55,25 @@ nav, p, section, article {
     padding: 8px;
 }
 
-/* Remove the underlines from the social media image links in the footer. */
-.socialmedia a {
-    text-decoration: none;
+.navigation {
+    display: flex;
+    list-style: none;
 }
+.navigation li {
+    flex: 1 1 auto;
+}
+.navigation a {
+    display: block;
+    color: var(--secondary-color);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.navigation a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
 
 .hero {
     position: relative;
@@ -73,9 +103,8 @@ h1 {
     text-align: center;
     opacity: 0.8;
     background-color: var(--accent2-color);
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
-
 .hero article img {
     float: right;
     width: 135px;
@@ -89,6 +118,66 @@ section h2 {
     color: var(--secondary-color);
 }
 
+/* History section */
+.history {
+    padding: 40px 20px;
+}
+/* Layout alignment */
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.content img {
+    padding: .5rem;
+}
+
+
+/* Adventure Awaits you section */
+.adventure {
+    padding: 40px 20px;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+}
+
+.adventure-grid figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.adventure-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    padding: 1.5rem;
+}
+.adventure-grid figcaption {
+    margin-top: 8px;
+    font-size: .9rem;
+}
+
+/* Footer */
 footer {
     border-top: 1px solid #333;
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    place-items: center;
+    background-color: var(--accent2-color);
 }
+footer p {
+    font-size: m;
+}
+.socialmedia {
+    display: flex;
+
+}
+/* Remove the underlines from the social media image links in the footer. */
+.socialmedia a {
+    text-decoration: none;
+    padding: .5rem;
+}
+
